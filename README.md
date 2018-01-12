@@ -4,6 +4,12 @@
 |---------------------|-------------------------|-------------------------|---------|-----------|-------|
 |  iso8601 string     | string                  | string                  | string  | float     | float |
 
+Each CSV is prepended by a one-line header. The header is the json dump of a dict. The header contains the dataset meta data.
+Ex:
+```
+{"site": "grenoble", "tx_length": 100, "start_date": "2017-06-20 16:22:15", "end_date": "2017-06-21 10:29:29", "tx_count": 100, "node_count": 50, "channel_count": 16, "transaction_count": 10, "tx_ifdur": 10}
+```
+
 ### Standard example:
 
 | datetime            | src                     | dst                     | channel | mean_rssi | pdr |
