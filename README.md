@@ -1,8 +1,8 @@
 ## CSV FORMAT
 
-| datetime            | src                     | dst                     | channel | mean_rssi | pdr   |
-|---------------------|-------------------------|-------------------------|---------|-----------|-------|
-|  iso8601 string     | string                  | string                  | string  | float     | float |
+| datetime            | src                     | dst                     | channel | mean_rssi | pdr           |
+|---------------------|-------------------------|-------------------------|---------|-----------|---------------|
+|  iso8601 string     | string                  | string                  | string  | float     | float (0-100) |
 
 Each CSV is prepended by a one-line header. The header is the json dump of a dict. The header contains the dataset meta data.
 Ex:
